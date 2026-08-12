@@ -1,0 +1,7 @@
+/vendor/
+/.phpunit.cache/
+/.php-cs-fixer.cache
+/build/
+*.xlsx
+!tests/fixtures/*.xlsx
+

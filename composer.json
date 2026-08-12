@@ -1,0 +1,32 @@
+{
+  "name": "excel-agent-tool/excel-agent-tool",
+  "description": "A deterministic, LLM-safe Excel document engine for PHP 8.0.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "phpoffice/phpspreadsheet": "~1.30.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "ExcelAgentTool\\": "src/"
+    }
+  },
+  "bin": [
+    "bin/excel-tool"
+  ],
+  "scripts": {
+    "test": "php tests/run.php",
+    "lint": "php tests/lint.php",
+    "check": [
+      "@lint",
+      "@test"
+    ]
+  },
+  "config": {
+    "platform": {
+      "php": "8.0.30"
+    },
+    "sort-packages": true
+  }
+}
